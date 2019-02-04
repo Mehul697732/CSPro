@@ -1,522 +1,240 @@
+
 <html>
+    <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
+body,h1 {font-family: "Raleway", sans-serif; width: 100%;}
+body, html {height: 100%;width: 100%;}
+.bgimg {
+    background-image: url('https://www.iqmetrix.com/hubfs/04_Resources/01_Blog/01_Daily_Dose/bigdatablog.jpg?t=1518642215661');
+    width: 100%;
+    min-height: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url("https://s6.favim.com/orig/151123/clouds-nature-night-sky-Favim.com-3622916.gif");
-    min-height: 100%;
-}
-.w3-bar .w3-button {
-    padding: 16px;
-}
-#MARKS {
-	position: relative;
-    width: 50px;
-    length: 50px;
-}
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
-.mySlides {display:none}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
 }
 </style>
-<body>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8279180117071931",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">MARKS Industries</a>
-    <!-- Right-sided navbar links -->
+<body style="background: linear-gradient(to right, white , blue);width: 100%;repeat: no-repeat;">
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    
+    <!-- Navbar (sit on top) -->
+<div class="w3-top" style="width: 100%;">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;background: linear-gradient(to right, black , blue);width: 100%;repeat: no-repeat;">
+    <a href="#to" class="w3-bar-item w3-button">Mehul Kumar Blogs</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i>CLIENTS</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Think BIG Dream Big</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Innovation, Revolution at it finest.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Welcome to MARKS Industies, where we inspire, innovate and revolutinize in every way.</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Technology</p>
-      <p>Futuristic technology in your hand today. Currently developed at marks Industries.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Biology</p>
-      <p>Health, and happniess gratified to self. The health of the environment, and the planet we call home.</p>
-    </div>
-      <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Education</p>
-      <p>Health, and happniess gratified to self. The health of the environment, and the planet we call home.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Power</p>
-      <p>Sustianble power source that will drive innovation, and a cleaner enivronement in the future.</p>
-    </div>
-    <div class="">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Transportation</p>
-      <p>transportation, and delivery systems. To shirk the world we live in today. Exploration</p>
+      <a href="science.html" class="w3-bar-item w3-button">Science</a>
+      <a href="technology.html" class="w3-bar-item w3-button">Technology</a>
+        <a href="engineering.html" class="w3-bar-item w3-button">Engineering</a>
+          <a href="arts.html" class="w3-bar-item w3-button">Arts</a>
+            <a href="math.html" class="w3-bar-item w3-button">Math</a>
+      <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="https://computer-engineering-technology-blog-by-mehul-kumar.000webhostapp.com/Marks/marks.html" class="w3-bar-item w3-button">MARKS Industries</a>
     </div>
   </div>
 </div>
+  
+  <div class="w3-display-middle" id="to">
+    <h1 class="w3-jumbo w3-animate-top">MEHUL KUMAR'S BLOG</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Home</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  by Mehul Kumar
+  </div>
+</div>
+
+
+
+
+<img src="https://cdn-images-1.medium.com/max/2000/1*KI9CCBXrIBFXn1lcU7hknA.jpeg" alt="Nature" style="width:100%">
+
+<h3><b>About Me</b></h3>
+
+
+<p>My name is Mehul Kumar. I am a student at Gordon Graydon Memorial Secondary School with a admiration towards STEAM subjects and courses to extend my knowledge and learn more about me and the surrounding environment. I am pursuing to achieve a computer science degree at university after I graduate from high school. I also have an interest in Entrepreneurship. I am attempting to make an impact by using my computer science, and STEAM powers! to signify a positive contribution through various developments and ideas.  </p>
+
+<div id="hard">
+<br>
+<br>
+<br>
+<h1>STEAM Science Technology Engineering Art Math </h1>
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12" style="width:100%">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://www.sciencenews.org/sites/default/files/2016/05/main/articles/052316_cc_mars-mission-main_free.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>MARS</b></h3>
+      <h5>Mars and the future of humanity , <span class="w3-opacity">November 29, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mars is a small rocky body once thought to be very Earthlike. Like the other terrestrial planets—Mercury, Venus, and Earth—its surface has been changed by volcanism, impacts from other bodies, movements of its crust, and atmospheric effects such as dust storms. It has polar ice caps that grow and recede with the change of seasons; areas of layered soils near the Martian poles suggest that the planet's climate has changed more than once, perhaps caused by a regular change in the planet's orbit.</p>
+      
+      <p>At present, Mars is too cold and its atmosphere is too thin to allow liquid water to exist at the surface for long. There's water ice close to the surface and more water frozen in the polar ice caps, but the quantity of water required to carve Mars's great channels and flood plains is not evident on—or near—the surface today. Images from NASA's Mars Global Surveyor spacecraft suggest that underground reserves of water may break through the surface as springs. The answers may lie deep beneath Mars's red soil.</p>
+      
+       <p>Unraveling the story of water on Mars is important to unlocking its past climate history, which will help us understand the evolution of all planets, including our own. Water is also believed to be a central ingredient for the initiation of life; the evidence of past or present water on Mars is expected to hold clues about past or present life on Mars, as well as the potential for life elsewhere in the universe. And, before humans can safely go to Mars, we need to know much more about the planet's environment, including the availability of resources such as water.</p>
+       
+       <p>The current understanding of planetary habitability—the ability of a world to develop environmental conditions favorable to the emergence of life—favors planets that have liquid water on their surface. Most often this requires the orbit of a planet to lie within the habitable zone, which for the Sun extends from just beyond Venus to about the semi-major axis of Mars. During perihelion, Mars dips inside this region, but Mars's thin (low-pressure) atmosphere prevents liquid water from existing over large regions for extended periods. The past flow of liquid water demonstrates the planet's potential for habitability. Recent evidence has suggested that any water on the Martian surface may have been too salty and acidic to support regular terrestrial life.
+
+
+Detection of impact glass deposits (green spots) at Alga crater, a possible site for preserved ancient life
+The lack of a magnetosphere and the extremely thin atmosphere of Mars are a challenge: the planet has little heat transfer across its surface, poor insulation against bombardment of the solar wind and insufficient atmospheric pressure to retain water in a liquid form (water instead sublimes to a gaseous state). Mars is nearly, or perhaps totally, geologically dead; the end of volcanic activity has apparently stopped the recycling of chemicals and minerals between the surface and interior of the planet.
+
+In situ investigations have been performed on Mars by the Viking landers, Spirit and Opportunity rovers, Phoenix lander, and Curiosity rover. Evidence suggests that the planet was once significantly more habitable than it is today, but whether living organisms ever existed there remains unknown. The Viking probes of the mid-1970s carried experiments designed to detect microorganisms in Martian soil at their respective landing sites and had positive results, including a temporary increase of CO2 production on exposure to water and nutrients. This sign of life was later disputed by scientists, resulting in a continuing debate, with NASA scientist Gilbert Levin asserting that Viking may have found life. A re-analysis of the Viking data, in light of modern knowledge of extremophile forms of life, has suggested that the Viking tests were not sophisticated enough to detect these forms of life. The tests could even have killed a (hypothetical) life form.[187] Tests conducted by the Phoenix Mars lander have shown that the soil has a alkaline pH and it contains magnesium, sodium, potassium and chloride. The soil nutrients may be able to support life, but life would still have to be shielded from the intense ultraviolet light. A recent analysis of martian meteorite EETA79001 found 0.6 ppm ClO−4, 1.4 ppm ClO−3, and 16 ppm NO−3, most likely of Martian origin. The ClO−3 suggests the presence of other highly oxidizing oxychlorines, such as ClO−2 or ClO, produced both by UV oxidation of Cl and X-ray radiolysis of ClO−Thus, only highly refractory and/or well-protected (sub-surface) organics or life forms are likely to survive.</p>
+       
+       <a href="https://en.wikipedia.org/wiki/Mars">Mars</a>
+       
+      
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <iframe width="100%" height="400" src="https://youtu.be/3iMlOH6hdOw" frameborder="0" allowfullscreen></iframe><br><br><br>
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12" style="width:100%">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://s.smore.com/u/thumbs/thumb-c2510c0b306a8dd61b1557041084c7a3.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>STEAM</b></h3>
+      <h5>STEAM and modern applications into daily reality , <span class="w3-opacity">January 5, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Science is involved in every aspect of our lives it is all around us from Biology, Chemistry, to Physics it help explain how and why things have specific outcomes. To some Science is magic to other Science is engineering, and to me Science is an adventure of discovery and explaination .</p>
+      
+      <p>Technology, the more it develops the more we can dream about the impossible. Year ago someone dreamed about a machine that can process an input and execute an output, then the computer developed into reality. Technology is now developing exponetially. Can wait to see the future of technology and its many contribution to make our lives easier.</p>
+      
+       <p>Engineering, some say innovation or inventing would be just a philosophy without engineers. Engieering is a difficult task but a well paid option. Engineering according to me is a really fun field regardless of the work needed to be one .</p>
+       
+        <p>Arts, is becoming more and more involved in STEM fields as it is directly connected to development of more and more innovative technology, and its direct connections to creativity and thinking outside the box for solutions.</p>
+        
+         <p>Mathematics is the study of such topics as quantity, structure, space, and change. It has no generally accepted definition. Mathematicians seek out patterns and use them to formulate new conjectures. Math is basically the langauge of the universe! since everthing can be expressed through variables and its modifications</p>
+      
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/6Cf7IL_eZ38" frameborder="0" allowfullscreen></iframe><br><br><br>
+
+     <!-- Blog entry number 2 -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYKI_5DMPPe2R53Or28vafNhH1UhWpTQyhWOOuYhIs8o2ZLoF" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Nikola Tesla</b></h3>
+      <h5>The inventor of the AC generator concept and Tesla's coils , <span class="w3-opacity">June 6, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Image a world with no electricity, can you? </p>
+      <p>Everday the flow of charges control almost every aspect of our lives. From yous cell phone to a simple light bulb.</p>
+      <p>So if electrical energy is so significant then where does it come from and what concept does it follow. The energy is converted from some energy form such as kinetic energy from rushing water or wind pattern the does work on a turbine generator.</p>
+      <p>But not just any generator. This generator is an Alternating Current generator which means the flow of electrons move in a back and forth manner. The inventor of the alternating current generator was Nikola Tesla in 1886 - Nikola Tesla tried to sell his AC power generator system to investors in New York City, but it fails to be of interest in a city which is already heavily invested in Edison's DC power systems. Other inventors around the world also promoting AC power have similar problems. But eventually the concept of the AC generator was proven to be the most efficient way of transmitting electricty over a large distances.</p>
+      <p>Tesla Coils, imagine being able to charge you phone and using it without a charger or a powerbank. Using Tesla coils this is a possibility. His invention of an method of transmitting current wireless would have become an efficient technology application. But the concept was proven to be dangerous if too much voltage is passed through the coils.</p>
+      <p>This has been my brief blog on Nikola Tesla. I did this blog to honour a genius inventor who's main intentions was to help people. I also feel that I embody some of the character traits as Tesla, such as an interest to help for the benefit rather than watch the chaos. I also aspire to learn about learning about new efficient way to generate electricity, and transmission with cheap costs for various developing countries</p>  
+      <p>For more information about Nikola Tesla <a href="https://www.biography.com/people/nikola-tesla-9504443">click here</a></p>
+      <p>Who is you idol or role model?</p>
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="http://www.planwallpaper.com/static/images/beautiful-and-elegant-hydrangeas-desktop-wallpaper-desktop_TZfb9Yg.jpg" style="width:100%">
-  <div class="text">Where we save the environment</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://images6.alphacoders.com/388/thumb-350-388855.jpg" style="width:100%">
-  <div class="text">Showing the world the beauty of the planet</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="http://s1.picswalls.com/wallpapers/2016/06/16/earth_033137537_311.jpg" style="width:100%">
-  <div class="text">Cleaning our Home through technology</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-
-<p> You may ask how we innovat. We are prospect in revolutionizing the lives of our customers by applying futuristic technology. Our vision is to bring the lifestyle oftomorrow today. </p>
-
-<p>MARKS Industries has gained worldwide attention for a series of historic milestones. It is the only private company ever to return a spacecraft from low-Earth orbit, which it first accomplished in December 2010. The company made history again in May 2012 when its Dragon spacecraft delivered cargo to and from the International Space Station — a challenging feat previously accomplished only by governments. Since then Dragon has delivered cargo to and from the space station multiple times, providing regular cargo resupply missions for NASA.</p>
-
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/6Cf7IL_eZ38" frameborder="0" allowfullscreen></iframe>
-
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
   <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Transportation of the future</h3>
-      <p>Revolutionary world transofrming the way we connect<br>Globalization on the grandest scale.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="http://download.seaicons.com/icons/dtafalonso/ios8/512/Tips-icon.png" alt="App" width="335" height="471">
     </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://image.flaticon.com/sprites/share/packs/189980-transportation.png" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Biology, Health,and Nature</h3>
-      <p>Revolutionary world transofrming the way we connect<br>Globalization on the grandest scale.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="http://study.com/cimages/course-image/nes-biology-test-practice-study-guide_186010_large.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Sustaibale Energy</h3>
-      <p>Revolutionary world transofrming the way we connect<br>Globalization on the grandest scale.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="http://rastek.com/reeetnew/wp-content/uploads/2018/01/1.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>21 Century Education</h3>
-      <p>Revolutionary world transofrming the way we connect<br>Globalization on the grandest scale.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://www.educationalappstore.com/images/best-apps-for-education.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Technology</h3>
-      <p>Shaping the future <br>For the benefit of man kind and nature.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="http://www.cmo.com/content/dam/CMO/Home%20Page/1046x616_Modern-Commerce-2.0-Technology-Sets-The-Stage-For-A-New-Round-Of-Disruption.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">OUR TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="Mehul" style="width:100%">
-        <div class="w3-container">
-          <h3>Mehul Kumar</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Mehul Kumar creative, and drviing inspiration. Throught the visionary otimistic view.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Rahul" style="width:100%">
-        <div class="w3-container">
-          <h3>Rahul Kumar</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="unknown" style="width:100%">
-        <div class="w3-container">
-          <h3>unknown</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="unknown" style="width:100%">
-        <div class="w3-container">
-          <h3>Unknown</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">140+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">550+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">890+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">1500+</span>
-    <br>Meetings
-  </div>
-</div>
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people for you</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/larger/public/article_images/2015/08/samsung-galaxy-s6-edge-plus-08.jpg?itok=7O1vObm_" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Development of apps such as Marks Learn, and game zone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="http://www.space-rockets.com/photo/launch2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The future of transportation in the hands of the present one step at a time.">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="http://aarp.cdn.arkadiumhosted.com/4.0-aarp/Content/Images/default/600x600_gameicon.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Game and user interfaced websites">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://i.ytimg.com/vi/vK2CGj8gAWc/maxresdefault.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Robotics and the promotion of an electric future">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="https://modernize.com/wp-content/uploads/2017/03/solar-cells-in-the-sun-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Solar powered and the developemnt of clean, sustainable and rewenable energy">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="http://www.telegraph.co.uk/content/dam/technology/2016/02/12/social-media-butto_3218906b_trans_NvBQzQNjv4BqpJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg?imwidth=450" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The creation of LIT the social media interface that purpose is to put the social back in social media.">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<p> Our latest innovation and developing is the MARKS Einstein personal assistant soon avaible on the play store for free!</p>
-    <p>It will be capable of applying machine learning and development form AI technology to better understand you like no tech=hnology has ever done before! I will be capable of retrieving information based on desire question or will learn from the users interaction with the software/hardware.</p>
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Inspiring kids to construct the future of technology through 21 century knowledge<br>
-      Robotics that lead to new transformational ideas.</p>
-      <p>Maniulating  the environement in a way to change the world for the next generation.<br>
-      Investing in ideas.</p>
-      <p>Investing to make a difference into regular lifestyle and solve some of the difficult challenge we face.<br>
-      Workign with inspired young and educated individuals who are determined to make a difference.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Technology</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Transportation</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Reserch, Entertainment, and Environment</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Energy</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:98%">98%</div>
-        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Education</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:98%">98%</div>
-      </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>MARKS Learn</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Education and Learning app</b></h1>
+      <p><span class="w3-xlarge">Knowledge is power!</span> MARKS Industries is currently developing a new way for individuals to learn more rather than from just an education facility. The app and website will be capable of teaching all the essentials learned in school with more detail for further understanding and clarification. MARKS Learn will also have other information and articles that relate to topics of interest for you! additionally MARKS Learn will already have all necessary tools to assist in learning such as a touch notepad, a calculator, a schedule, and even important tips for success!</p>
     </div>
   </div>
 </div>
 
 
 
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ontario, Canada</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 647-608-7239</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: marksindustries@gmail.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
+  
+  <br>
+ <br>
+ <br>
+    
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding w3-blue">
+      <h4>Terms</h4>
     </div>
-    <div class="w3-half">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">STEAM</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Software</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Science</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Robotics</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Energy</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Force</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Circuits</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Operating system</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arts and Design</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HardWork</span> 
+    </p>
     </div>
   </div>
+  
+<!-- END Introduction Menu -->
 </div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+<div>
+
+<!-- Footer -->
+<footer class="w3-container w3-red w3-padding-32 w3-margin-top">
+  <p>This is the home page of my blog take a look at some of my interests in creativity and STEAM subjects. Note most of the images on this blog do not belong to me. They are from online source but the written content are from me.</p>
+</footer>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#to" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -525,51 +243,8 @@ function showSlides(n) {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://computer-engineering-technology-blog-by-mehul-kumar.000webhostapp.com/Marks/marks.html#work" title="Marks Industries" target="_blank" class="w3-hover-text-green">MARKS Industries</a></p>
+  <p>Powered by <a href="https://computer-engineering-technology-blog-by-mehul-kumar.000webhostapp.com/Marks/marks.html" title="MARKS Industries" target="_blank" class="w3-hover-text-green">MARKS Industries</a></p>
 </footer>
- 
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -579,5 +254,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   });
 </script>
 
-</body>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
 </html>
+
+
