@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kinetics</title>
+
+<style>
+html {
+  font-size: 10px;
+}
+
+body {
+  background: navy;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center
+
+}
+
+p {
+  padding: 5px;
+}
+
+.words {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  min-height: 50px;
+}
+.suggestions {
+  text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align: left; color:white">Kinetics</h1>
+
+<h1 style="color:white;  font-size: 150px; width:100%;height:100%"><b>0 ^ 0</b></h1>
+
+
+
+
+<div class="words" contenteditable></div>
+<script>
+
+window.speechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
+const recognition = new speechRecognition();
+
+// see what we are saying as we are saying it
+recognition.continuous = true;
+recognition.interimResults = true;
+
+let p = document.createElement("p");
+const words = document.querySelector(".words");
+words.appendChild(p);
+
+recognition.addEventListener("result", e => {
+  console.log(e);
+  const transcript = Array.from(e.results)
+    .map(result => result[0])
+    .map(result => result.transcript)
+    .join("");
+
+  p.textContent = transcript;
+  if (e.results[0].isFinal == true) {
+    // p = document.createElement('p');
+    words.appendChild(p);
+  }
+  if (transcript.includes("show me the weather")) {
+    window.location.href =
+      "https://weather.gc.ca/city/pages/bc-59_metric_e.html";
+  } else if (transcript.includes("tell me a joke")) {
+    window.location.href = "https://icanhazdadjoke.com/";
+  }
+
+  console.log(transcript);
+});
+
+recognition.addEventListener("end", recognition.start());
+
+</script>
+</body>
+</html>
