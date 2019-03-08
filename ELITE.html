@@ -22,7 +22,6 @@
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -31,11 +30,9 @@
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -43,7 +40,6 @@
   font-size: 36px;
   margin-left: 50px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -59,9 +55,8 @@
       <a class="navbar-brand" style="color:#fff;" href="#">E L I T E</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Browse</a></li>
-      <li><a href="#">Today</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Servicss</a></li>
+      <li><a href="#">Social</a></li>
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="form-group">
@@ -69,10 +64,32 @@
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
+    
+    
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+    
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content for sign up-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <form><input name="sign"></form><br>
+          <form><input name="sign"></form><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
   </div>
 </nav>
 
@@ -81,17 +98,16 @@
   <p>Here are where the cards and filter go</p>
 </div>
 
-<div style="width:250px;" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn"</a>
+<div style="width:25%;text-align:left;" class="sidenav">
   <a href="#">Filter</a>
-  <a href="#">Services</a>
+  <a href="#" data-toggle="modal" data-target="#myModal">Service Request</a>   
   <a href="#">About ELITE</a>
   <a href="#">Contact</a>
 </div>
 
 
 
- <footer style="padding:20px;position: fixed;left: 0;bottom: 0;width: 100%;background-color: black;color: white;text-align: center;left: 250px;">
+ <footer style="padding:20px;position: fixed;left: 0;bottom: 0;width: 100%;background-color: black;color: white;text-align: center;">
   <p>Footer</p>
   <p>Powered by MARKS Industries</p>
 </footer>
