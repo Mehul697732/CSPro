@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
   <title>ELITE</title>
   <meta charset="utf-8">
@@ -99,10 +101,51 @@
 </div>
 
 <div style="width:25%;text-align:left;" class="sidenav">
-  <a href="#">Filter</a>
-  <a href="#" data-toggle="modal" data-target="#myModal">Service Request</a>   
-  <a href="#">About ELITE</a>
-  <a href="#">Contact</a>
+
+	 <button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="width:100%;height:15%;color:#818181;">FILTER</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+  
+   <button onclick="document.getElementById('open').style.display='block'" class="w3-button" style="width:100%;height:15%;color:#818181;">REQUEST</button>
+
+  <div id="open" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('open').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+   
+  
+  <button href="#" class="w3-button" style="width:100%;height:15%;color:#818181;">About ELITE</button>
+  <button href="#" class="w3-button" style="width:100%;height:15%;color:#818181;">Contact</button>
+ 
+  
+        
 </div>
 
 
