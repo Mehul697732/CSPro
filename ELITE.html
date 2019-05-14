@@ -81,10 +81,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">ELITE portal center</h4>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <p>Login or Sign up to the ELITE portal</p>
           <form><input name="sign"></form><br>
           <form><input name="sign"></form><br>
         </div>
@@ -97,7 +97,7 @@
 
 <div style="width:250px;" class="container">
   <h3>Navbar Forms</h3>
-  <p>Here are where the cards and filter go</p>
+  <p>Here are where the cards and filter go</p> 
 </div>
 
 <div style="width:25%;text-align:left;" class="sidenav">
@@ -106,17 +106,33 @@
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-red"> 
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>FILTER</h2>
       </header>
-      <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+      <div class="w3-container"><br>
+      
+      
+      <form action="/action.php">
+        <p>Employer</p>
+        <input name="employer" style="width:100%">
+         <p>Hours of work</p>
+        <input name="type" style="width:100%">
+         <p>Type of work</p>
+        <input name="" style="width:100%">
+         <p>Pay range</p>
+        <input style="width:100%">
+         <p>Industry</p>
+        <input style="width:100%"><br><br>
+        <button name="filter" style="width:100%;padding:20px;background:green;color:white">DONE</button><br><br>
+        </form>
+        
+        
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      
+      <footer class="w3-container w3-red">
+        <p>ELITE filter center</p>
       </footer>
     </div>
   </div>
@@ -125,17 +141,32 @@
 
   <div id="open" class="w3-modal">
     <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-blue"> 
         <span onclick="document.getElementById('open').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>REQUEST</h2>
       </header>
-      <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+      <div class="w3-container"><br>
+        
+        <form action="request.php" method="post">
+          <p>Employer</p>
+          <input name="employer" style="width:100%">
+           <p>Type of work</p>
+          <input name="type" style="width:100%">
+           <p>Hours</p>
+          <input name="" style="width:100%">
+           <p>Qualification</p>
+          <input style="width:100%">
+           <p>Files</p>
+          <input type="file" style="width:100%"><br><br>
+          <button name="request" style="width:100%;padding:20px;background:green;color:white">DONE</button><br><br>
+        </form>
+       
+        
+        
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-blue">
+        <p>ELITE request center</p>
       </footer>
     </div>
   </div>
