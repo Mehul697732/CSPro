@@ -3,13 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
+
   <title>ELITE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
   
   <style>
   .sidenav {
@@ -53,16 +53,19 @@
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+  
     <div class="navbar-header">
       <a class="navbar-brand" style="color:#fff;" href="#">E L I T E</a>
     </div>
+    
     <ul class="nav navbar-nav">
       <li><a href="#">Servicss</a></li>
       <li><a href="#">Social</a></li>
     </ul>
+    
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
+        <input type="text" id="search" class="form-control" placeholder="Search" name="search">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -76,23 +79,29 @@
      <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content for sign up-->
       <div class="modal-content">
+      
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">ELITE portal center</h4>
         </div>
+        
         <div class="modal-body">
           <p>Login or Sign up to the ELITE portal</p>
           <form><input name="sign"></form><br>
           <form><input name="sign"></form><br>
         </div>
+        
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div>
+        
+     </div>
+      
+    </div>
   </div>
+ </div>
 </nav>
 
 <div style="width:250px;" class="container">
@@ -148,7 +157,7 @@
       </header>
       <div class="w3-container"><br>
         
-        <form action="request.php" method="post">
+        <form action="/request.php" method="post">
           <p>Employer</p>
           <input name="employer" style="width:100%">
            <p>Type of work</p>
@@ -185,6 +194,27 @@
   <p>Footer</p>
   <p>Powered by MARKS Industries</p>
 </footer>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJQ1eChsZjKiCQXeRPKBIJrWEOoAj1itE",
+    authDomain: "just-well-236623.firebaseapp.com",
+    databaseURL: "https://just-well-236623.firebaseio.com",
+    projectId: "just-well-236623",
+    storageBucket: "just-well-236623.appspot.com",
+    messagingSenderId: "705034330662",
+    appId: "1:705034330662:web:c4a29b9aa1899074"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 </body>
 </html>
